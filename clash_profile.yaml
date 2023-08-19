@@ -1,0 +1,36 @@
+port: 7890
+socks-port: 7891
+mode: Rule
+log-level: info
+external-controller: :9090
+allow-lan: true
+proxy-providers:
+  source_1:
+    type: http
+    path: ./source_1.yaml
+    url: https://api.dler.io/sub?target=clash&url=https%3A%2F%2Fnodefree.org%2Fdy%2F2023%2F08%2F20230818.yaml&emoji=true&list=false&udp=false&tfo=false&scv=false&fdn=false&sort=false
+    interval: 600
+  source_2:
+    type: http
+    path: ./source_2.yaml
+    url: https://api.dler.io/sub?target=clash&url=https%3A%2F%2Fclashnode.com%2Fwp-content%2Fuploads%2F2023%2F08%2F20230819.yaml&emoji=true&list=false&udp=false&tfo=false&scv=false&fdn=false&sort=false
+    interval: 600
+proxy-groups:
+  - name: proxy_group
+    type: url-test
+    url: https://www.google.com
+    interval: 10
+    use:
+      - source_1
+      - source_2
+    #proxies:
+rule-providers:
+  proxy_rules:
+    type: http
+    behavior: classical
+    interval: 1
+    url: https://raw.githubusercontent.com/pangyulei/FileHosting/main/proxy_rules.yaml
+    path: ./proxy_rules.yaml
+rules:
+ - RULE-SET,proxy_rules,proxy_group
+ - MATCH, DIRECT
