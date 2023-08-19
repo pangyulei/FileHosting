@@ -13,7 +13,7 @@ proxy-providers:
   source_2:
     type: http
     path: ./source_2.yaml
-    url: https://clashnode.com/wp-content/uploads/2023/08/20230819.yaml
+    url: https://api.dler.io/sub?target=clash&url=https%3A%2F%2Fclashnode.com%2Fwp-content%2Fuploads%2F2023%2F08%2F20230819.txt&emoji=true&list=false&udp=false&tfo=false&scv=false&fdn=false&sort=false
     interval: 600
 proxy-groups:
   - name: proxy_group
