@@ -8,7 +8,7 @@ proxy-providers:
   source_1:
     type: http
     path: ./source_1.yaml
-    url: https://subscribe.cctv.rip/sub?target=clash&url=https%3A%2F%2Fnodefree.org%2Fdy%2F2023%2F08%2F20230819.txt%7Chttps%3A%2F%2Fclashnode.com%2Fwp-content%2Fuploads%2F2023%2F08%2F20230819.txt%7Chttps%3A%2F%2Fclashfree.eu.org%2Fwp-content%2Fuploads%2Frss%2F20230819.txt%7C&insert=false&append_type=true&emoji=true&list=false&tfo=false&scv=false&fdn=true&sort=true&new_name=true
+    url: https://subscribe.cctv.rip/sub?target=clash&url=https%3A%2F%2Fclashfree.eu.org%2Fwp-content%2Fuploads%2Frss%2F20230819.yml%7Chttps%3A%2F%2Fclashnode.com%2Fwp-content%2Fuploads%2F2023%2F08%2F20230819.yaml%7Chttps%3A%2F%2Fnodefree.org%2Fdy%2F2023%2F08%2F20230819.yaml%7C&insert=false&exclude=_CN_%E4%B8%AD%E5%9B%BD-%3E&emoji=true&list=false&tfo=false&scv=false&fdn=false&sort=false&new_name=true
     interval: 600
 proxy-groups:
   - name: proxy_group
