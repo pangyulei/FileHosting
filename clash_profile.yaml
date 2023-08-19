@@ -23,7 +23,6 @@ proxy-groups:
     use:
       - source_1
       - source_2
-    #proxies:
 rule-providers:
   proxy_rules:
     type: http
