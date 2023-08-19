@@ -8,7 +8,7 @@ proxy-providers:
   source_1:
     type: http
     path: ./source_1.yaml
-    url: https://raw.githubusercontent.com/pangyulei/FileHosting/main/proxy_servers.yaml
+    url: https://ghproxy.com/https://raw.githubusercontent.com/pangyulei/FileHosting/main/proxy_servers.yaml
     interval: 600
 proxy-groups:
   - name: proxy_group
@@ -22,7 +22,7 @@ rule-providers:
     type: http
     behavior: classical
     interval: 1
-    url: https://raw.githubusercontent.com/pangyulei/FileHosting/main/proxy_rules.yaml
+    url: https://ghproxy.com/https://raw.githubusercontent.com/pangyulei/FileHosting/main/proxy_rules.yaml
     path: ./proxy_rules.yaml
 rules:
  - RULE-SET,proxy_rules,proxy_group
