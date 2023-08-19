@@ -8,12 +8,7 @@ proxy-providers:
   source_1:
     type: http
     path: ./source_1.yaml
-    url: https://api.dler.io/sub?target=clash&url=https%3A%2F%2Fnodefree.org%2Fdy%2F2023%2F08%2F20230819.txt&emoji=true&list=false&udp=false&tfo=false&scv=false&fdn=false&sort=false
-    interval: 600
-  source_2:
-    type: http
-    path: ./source_2.yaml
-    url: https://api.dler.io/sub?target=clash&url=https%3A%2F%2Fclashnode.com%2Fwp-content%2Fuploads%2F2023%2F08%2F20230819.txt&emoji=true&list=false&udp=false&tfo=false&scv=false&fdn=false&sort=false
+    url: https://subscribe.cctv.rip/sub?target=clash&url=https%3A%2F%2Fnodefree.org%2Fdy%2F2023%2F08%2F20230819.txt%7Chttps%3A%2F%2Fclashnode.com%2Fwp-content%2Fuploads%2F2023%2F08%2F20230819.txt%7Chttps%3A%2F%2Fclashfree.eu.org%2Fwp-content%2Fuploads%2Frss%2F20230819.txt%7C&insert=false&config=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2FACL4SSR%2FACL4SSR%40master%2FClash%2Fconfig%2FACL4SSR_Online_Mini.ini&emoji=true&list=true&tfo=false&scv=false&fdn=false&sort=false&new_name=true
     interval: 600
 proxy-groups:
   - name: proxy_group
@@ -22,7 +17,6 @@ proxy-groups:
     interval: 10
     use:
       - source_1
-      - source_2
 rule-providers:
   proxy_rules:
     type: http
